@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rehoboth, votre boutique numérique internationale. Découvrez nos modèles de CV professionnels et nos ressources digitales.">
+  <title>Rehoboth | Boutique numérique</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #101827;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0b1220;
+      border-bottom: 1px solid #293548;
+    }
+
+    .logo {
+      color: #e6b85c;
+      font-size: 27px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 95px 20px;
+      background: linear-gradient(135deg, #17243a, #101827);
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: #e6b85c;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #c3ccda;
+      font-size: 17px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 14px 28px;
+      background: #d9a943;
+      color: #101827;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 7px;
+    }
+
+    section {
+      padding: 65px 7%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .subtitle {
+      color: #b8c3d3;
+      margin-bottom: 35px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .product {
+      background: #1b293d;
+      padding: 28px;
+      border-radius: 12px;
+      border: 1px solid #35445a;
+    }
+
+    .product .symbol {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .product h3 {
+      color: #e6b85c;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      color: #c3ccda;
+      font-size: 14px;
+    }
+
+    .about {
+      background: #17243a;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: auto;
+      color: #c3ccda;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 15px;
+      background: #0b1220;
+      color: #aab5c5;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 12px;
+      }
+
+      .hero h1 {
+        font-size: 31px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">REHOBOTH</div>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#boutique">Boutique</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <h1>Bienvenue chez <span>Rehoboth</span></h1>
+      <p>
+        Votre boutique numérique internationale.
+        Découvrez des ressources digitales et des modèles
+        de CV professionnels pour réussir vos projets.
+      </p>
+      <a href="#boutique" class="btn">Découvrir nos produits</a>
+    </section>
+
+    <section id="boutique">
+      <h2>Notre boutique</h2>
+      <p class="subtitle">
+        Des solutions numériques pour votre réussite.
+      </p>
+
+      <div class="products">
+        <div class="product">
+          <div class="symbol">📄</div>
+          <h3>Modèles de CV</h3>
+          <p>
+            Des modèles de CV professionnels,
+            modernes et faciles à personnaliser.
+          </p>
+        </div>
+
+        <div class="product">
+          <div class="symbol">💼</div>
+          <h3>Documents professionnels</h3>
+          <p>
+            Des ressources pratiques pour
+            vos activités et votre carrière.
+          </p>
+        </div>
+
+        <div class="product">
+          <div class="symbol">🌍</div>
+          <h3>Produits numériques</h3>
+          <p>
+            Découvrez nos solutions digitales
+            accessibles partout dans le monde.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="apropos">
+      <h2>À propos de Rehoboth</h2>
+      <p>
+        Rehoboth est une boutique numérique qui
+        propose des ressources digitales de qualité.
+        Notre ambition est de rendre les outils
+        professionnels accessibles à tous,
+        partout dans le monde.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contactez-nous</h2>
+      <p class="subtitle">
+        Une question sur nos produits ?
+        Nous serons heureux de vous accompagner.
+      </p>
+      <a class="btn"
+         href="mailto:clovismud2@gmail.com">
+        Nous contacter
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Rehoboth Digital Boutique.</p>
+    <p>Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
